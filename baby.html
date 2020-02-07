@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<style>
+        body {background-image:url('images/background.png');}
+		div{
+			padding: 25px;
+			margin:0 auto;
+			width:1280px;		
+        }
+		canvas{
+			display: block;
+			margin: -500auto;
+			border:18px solid #CCFFFF;
+		}
+		</style>
+	</head>
+	<body onkeydown="doKeyDown(event)"   style="background-color:#66CCCC">
+        
+
+		<div class="game">
+		    <div>
+		    <canvas id="canvas" width="1280" height="800" style="background-color:#009999" ></canvas></div>		
+			<div id="msg"></div>			
+			<input  class="btn" type="button" value="上一关" onclick="NextLevel(-1)">
+			<input type="button" value="下一关" onclick="NextLevel(1)">
+			<input type="button" value="新的一天" onclick="NextLevel(0)">
+
+        </div>
+
+		<audio src="music/menu.mp3" loop id="menu"></audio>
+	    <audio src="music/part0.mp3" loop id="part0"></audio>
+	    <audio src="music/part1.mp3" loop id="part1"></audio>
+	    <audio src="music/part2.mp3" loop id="part2"></audio>
+	    <audio src="music/part3.mp3" loop id="part3"></audio>
+	    <audio src="music/part4.mp3" loop id="part4"></audio>
+	    <audio src="music/part5.mp3" loop id="part5"></audio>
+	    <audio src="music/lose.mp3" loop id="lose"></audio>
+	    <audio src="music/loseback.mp3" loop id="loseback"></audio>
+
+
+		<script src="js/mapdata.js"></script>
+	    <script src="js/mapPainter.js"></script>	
+	    <script src="js/checkFinish.js"></script>
+	    <script src="js/animate.js"></script>		
+	    <script src="js/requestNextAnimationFrame.js"></script>
+	    <script src="js/function.js"></script>
+	    <script src="js/baby.js"></script>
+	    <script src="css/bottom.css"></script>
+		
+	</body>
+
+	
+
+
+
+</html>
